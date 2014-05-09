@@ -31,7 +31,7 @@ hpow$Sub_metering_3<- as.numeric(as.character(hpow$Sub_metering_3))
 
 #plot line graph of Global Active power for 2007-02-01 and 2007-02-02
 
-png("plot2.png",width=480,height=480,units="px",bg="transparent")
+png("plot2.png",width=480,height=480,units="px")
 par(mfrow=c(1,1))
-plot(hpow$Global_active_power~hpow$datetime,type="l",col="gray28",lwd=0.01,xlab="",ylab="Global Active Power (kilowatts)")
+plot(hpow$Global_active_power~hpow$datetime,type="l",col="gray28",lwd=1,xlab="",ylab="Global Active Power (kilowatts)")
 dev.off()

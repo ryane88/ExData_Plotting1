@@ -30,7 +30,7 @@ hpow$Sub_metering_3<- as.numeric(as.character(hpow$Sub_metering_3))
 
 
 #plot histogram of column Gllobal Active Power for 2007-02-01 and 2007-02-02
-png("plot1.png",width=480,height=480,units="px",bg="transparent")
+png("plot1.png",width=480,height=480,units="px")
 par(mfrow=c(1,1))
 
 hist(hpow$Global_active_power,axes=F,col="#ff2500",main="Global Active Power",xlab="Global Active Power (kilowatts)")

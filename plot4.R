@@ -32,7 +32,7 @@ hpow$Sub_metering_3<- as.numeric(as.character(hpow$Sub_metering_3))
 #4 individual plots of Global Active Power, Voltage, 3 sub metering areas, and Global Reactive Power
 #for dates 2007-02-01 and 2007-02-02
 
-png("plot4.png",width=490,height=490,units="px",bg="transparent")
+png("plot4.png",width=490,height=490,units="px")
 par(mfrow=c(2,2))
 plot(hpow$Global_active_power~hpow$datetime,type="l",xlab="",ylab="Global Active Power")
 Sys.sleep(0.1)

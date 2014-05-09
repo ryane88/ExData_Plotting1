@@ -30,7 +30,7 @@ hpow$Sub_metering_3<- as.numeric(as.character(hpow$Sub_metering_3))
 
 
 #line plot distinguishing readings in watt-hours for the 3 sub metering areas
-png("plot3.png",width=480,height=480,units="px",bg="transparent")
+png("plot3.png",width=480,height=480,units="px")
 par(mfrow=c(1,1))
 plot(hpow$Sub_metering_1~hpow$datetime,type="l",xlab="",ylab="Energy sub metering")
 lines(hpow$Sub_metering_2~hpow$datetime,col="#ff2500")
